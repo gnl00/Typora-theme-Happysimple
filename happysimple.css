@@ -6,6 +6,7 @@
    3.思源黑体：SiYuan_HeiTi (字粗:100、200、300、...、700)
    4.霞鹜文楷：XiaWuWenKai (字粗:100、200、300)
    5.站酷仓耳渔阳体: ZhanKu_YvYangTi (字粗:100、200、300、400、500)
+   6.霞鹜新晰黑 XiaWuXinXiHei (字粗: 300)
 */
 
 :root {
@@ -34,7 +35,7 @@
     /* YAML */
     --yaml-margin: 20px 0px;
     --yaml-padding: 10px;
-    --yaml-font-family: 'XiaWuWenKai';
+    --yaml-font-family: 'XiaWuXinXiHei';
     --yaml-font-size: 1.0rem;
     --yaml-font-weight: 200;
     --yaml-line-height: 1.5;
@@ -49,12 +50,12 @@
     --toc-background-color: #fff;
     --toc-border: 2px solid #000;
     --toc-border-radius: 5px;
-    --toc-title-font-family: 'XiaWuWenKai';       /* ----------设置`目录`二字---------- */
+    --toc-title-font-family: 'XiaWuXinXiHei';       /* ----------设置`目录`二字---------- */
     --toc-title-font-size: 1.0rem;
     --toc-title-font-weight: 500;
     --toc-title-line-height: 1.5;
     --toc-title-color:#000;
-    --toc-content-font-family: 'XiaWuWenKai';     /* ----------设置目录内容---------- */
+    --toc-content-font-family: 'XiaWuXinXiHei';     /* ----------设置目录内容---------- */
     --toc-content-font-size: 1.0rem;
     --toc-content-font-weight: 300;
     --toc-content-line-height: 1.5;
@@ -66,7 +67,7 @@
     /* 标题(仅支持h1,h2,h3) */
     --h1-margin: 30px 0px;
     --h1-padding: 0px;
-    --h1-font-family: 'XiaWuWenKai';
+    --h1-font-family: 'XiaWuXinXiHei';
     --h1-font-size: 2.4rem;
     --h1-font-weight: 500;
     --h1-line-height: 1.5;
@@ -77,7 +78,7 @@
 
     --h2-margin: 25px 0px;
     --h2-padding: 0px;
-    --h2-font-family: 'XiaWuWenKai';
+    --h2-font-family: 'XiaWuXinXiHei';
     --h2-font-size: 2.0rem;
     --h2-font-weight: 400;
     --h2-line-height: 1.5;
@@ -88,7 +89,7 @@
 
     --h3-margin: 20px 0px;
     --h3-padding: 0px;
-    --h3-font-family: 'XiaWuWenKai';
+    --h3-font-family: 'XiaWuXinXiHei';
     --h3-font-size: 1.6rem;
     --h3-font-weight: 300;
     --h3-line-height: 1.5;
@@ -100,7 +101,7 @@
     /* 引用块 */
     --blockquote-margin: 10px 0px;
     --blockquote-padding: 10px;
-    --blockquote-font-family: 'XiaWuWenKai';
+    --blockquote-font-family: 'XiaWuXinXiHei';
     --blockquote-font-size: 1.0rem;
     --blockquote-font-weight: 300;
     --blockquote-line-height: 1.5;
@@ -117,7 +118,7 @@
 
 
     /* 注释 */
-    --annotation-font-family: "XiaWuWenKai";
+    --annotation-font-family: "XiaWuXinXiHei";
     --annotation-font-size: 1.0rem;
     --annotation-font-weight: 500;
     --annotation-color: #4e9452;
@@ -178,13 +179,13 @@
     --kbd-border-color: #000;
 
     /* 折叠标签 */
-    --details-title-font-family: 'XiaWuWenKai';              /* 折叠标签题目 */
+    --details-title-font-family: 'XiaWuXinXiHei';              /* 折叠标签题目 */
     --details-title-font-size: 1.0rem;
     --details-title-font-weight: 600;
     --details-title-line-height: 1.5;
     --details-title-color: rgba(0,0,0,0.75);
     --details-title-background-color: #d0edf1;
-    --details-content-font-family: 'XiaWuWenKai';             /* 折叠标签内容 */
+    --details-content-font-family: 'XiaWuXinXiHei';             /* 折叠标签内容 */
     --details-content-font-size: 1.0rem;
     --details-content-font-weight: 300;
     --details-content-line-height: 1.5;
@@ -249,7 +250,7 @@
     /* 有序列表 */
     --order-list-margin: 10px 0px;
     --order-list-padding: 0px;
-    --order-list-font-family: 'XiaWuWenKai';
+    --order-list-font-family: 'XiaWuXinXiHei';
     --order-list-font-size: 1.0rem;
     --order-list-font-weight: 300;
     --order-list-color: #000;
@@ -261,7 +262,7 @@
     /* 无序列表 */
     --unorder-list-margin: 10px 0px;
     --unorder-list-padding: 0px;
-    --unorder-list-font-family: 'XiaWuWenKai';
+    --unorder-list-font-family: 'XiaWuXinXiHei';
     --unorder-list-font-size: 1.0rem;
     --unorder-list-font-weight: 300;
     --unorder-list-color: #000;                   /* 无序列表的字体颜色 */
