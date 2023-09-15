@@ -1,10 +1,18 @@
+## 基于 Happysimple 自定义修改
+
+* 界面：1、修改背景颜色；2、去除背景图。
+* 超链接：1、去掉加粗；2、去掉底部横线。
+* 行内代码：1、修改颜色以及背景颜色；2、新增圆角 5px。
+* 代码块：1、去除顶栏；2、修改注释代码颜色为灰色；3、修改 code-tooltip 样式；4、字体增大为 1em。
+* ...
+
+> [Happysimple](https://github.com/HappySimple/Typora-theme-Happysimple)
+
 ## 1.主题效果演示
 
 > 注：此主题仅在Windows下设计和测试，在其操作系统上的效果未知！
 
 <img src="./happysimple/assets/Typora_01.png" style="width: calc(95%); border:1px solid black;" alt="Typora主题效果演示">
-
-
 
 ## 2.主题特色
 
@@ -28,14 +36,6 @@
 
 8. 增加了`小标签`、`强调型文本`、`字体特效` 、`折叠标签`等！
 
-
-
 ## 3.主题安装
 
 打开Typora➡️文件➡️偏好设置➡️外观➡️打开主题文件夹➡️解压压缩包，将文件夹中的内容（5个）移动至此目录➡️重启Typora➡️选择主题➡️开始使用
-
-
-
-## 4.自定义主题
-
-请参考[HappySimple](https://www.happysimple.wang)！（网站备案中，暂时关闭）

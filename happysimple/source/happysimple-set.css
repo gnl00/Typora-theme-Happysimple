@@ -52,7 +52,7 @@ body {
 
 /* --------------------------------------- Favico ---------------------------------------- */
 body:not(.typora-sourceview-on) content {
-    background-image: var(--favico-url);
+    /*background-image: var(--favico-url);*/
     background-size : var(--favico-size);
     background-position: var(--favico-position);
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ pre.md-meta-block {
 .md-toc:before {             /* 自定义"目录"二字 */
     position: relative;
     left: 5px;
-    bottom: 0px;
+    bottom: 0;
     display: inline-block;
     content: '目录';
     font-family: var(--toc-title-font-family);
@@ -111,7 +111,7 @@ pre.md-meta-block {
 
 .md-toc-content,
 .md-toc:focus .md-toc-content {
-    margin: 0px;
+    margin: 0;
     padding: 5px;
     line-height: var(--toc-content-line-height);
     border: none;
@@ -119,7 +119,7 @@ pre.md-meta-block {
 }
 
 .md-toc-h1 .md-toc-inner{
-    text-indent: 0em;
+    text-indent: 0;
 }
 .md-toc-h2 .md-toc-inner{
     text-indent: 2em;
@@ -152,7 +152,7 @@ h1 {
     font-family: var(--h1-font-family);
     font-size: var(--h1-font-size);
     font-weight: var(--h1-font-weight);
-    line-height: var(--h1-font-line-height);
+    line-height: var(--h1-line-height);
     display: block;
     text-align: center; 
 }
@@ -207,10 +207,10 @@ h3:before {
 }
 h3.md-focus:before{
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     margin-right: var(--h3-icon-margin-right);
-    padding: 0px;
+    padding: 0;
     font-family: "iconfont";
     content: var(--h3-icon);
     border: none;
@@ -249,7 +249,7 @@ blockquote[alt="info"]:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0px;
+    margin: 0;
     padding-right: 5px;
     font-family: "iconfont";
     content: '\e601';
@@ -263,7 +263,7 @@ blockquote[alt="warn"]:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0px;
+    margin: 0;
     padding-right: 5px;
     font-family: "iconfont";
     content: '\e600';
@@ -277,7 +277,7 @@ blockquote[alt="danger"]:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0px;
+    margin: 0;
     padding-right: 5px;
     font-family: "iconfont";
     content: '\e614';
@@ -291,7 +291,7 @@ blockquote[alt="success"]:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0px;
+    margin: 0;
     padding-right: 5px;
     font-family: "iconfont";
     content: '\e605';
@@ -317,11 +317,11 @@ blockquote[alt="success"]:before {
     padding: var(--link-padding);
     font-family: var(--link-font-family);
     font-size: var(--link-font-size);
-    font-weight: var(--link-font-weight);
+    /*font-weight: var(--link-font-weight);*/
     line-height: var(--link-line-height);
     color: var(--link-color);
     background-color: var(--link-background-color);
-    border-bottom: var(--link-border-bottom);
+    /*border-bottom: var(--link-border-bottom);*/
     text-decoration: none;
     cursor: pointer;
 }
@@ -367,7 +367,7 @@ font[title="gray"] {
 
 /*  强调型文本  */
 span[alt]{
-    margin: var(-emp-margin);
+    margin: var(--emp-margin);
     padding: var(--emp-padding);
     font-family: var(--emp-font-family);
     font-size: var(--emp-font-size);
@@ -418,7 +418,7 @@ span[alt='shadow']{
 
 /* 高亮 */
 #write span[md-inline="highlight"] mark{
-    margin: 0px; 
+    margin: 0;
     padding: 2px 4px;
     font-family: var(--highlight-font-family);
     font-size: var(--highlight-font-size);
@@ -459,7 +459,7 @@ kbd {
 
 /* ------------------------------------------ 折叠标签 ------------------------------------ */
 details {
-	margin: 20px 0px;
+	margin: 20px 0;
     padding: 16px 8px;
 }
 
@@ -479,7 +479,7 @@ details>summary {
 }
 
 details[open] {
-    padding: 16px 8px 0px 8px;
+    padding: 16px 8px 0 8px;
     font-family: var(--details-content-font-family);
     font-size: var(--details-content-font-size);
     font-weight: var(--details-content-font-weight);
@@ -491,7 +491,7 @@ details[open] {
 }
 
 details[open]>summary {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 16px 8px;
     font-family: var(--details-title-font-family);
     font-size: var(--details-title-font-size);
@@ -500,16 +500,16 @@ details[open]>summary {
     color: var(--details-title-color);
     background-color: var(--details-title-background-color);
     border: none;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 /* --------------------------------------------------------------------------------------- */
 
 
 /* --------------------------------------- 水平线 ---------------------------------------- */
 hr {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100%;
     border: none;
     border-bottom: var(--hr-style);
@@ -524,12 +524,12 @@ hr {
     font-weight: var(--fontnote-weight);
     line-height: 1.0;
     color: var(--footnote-color);
-    background: var(--footnote-bg-color);
+    background: var(--footnote-background);
 }
 
 #write sup.md-footnote{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: none;
 }
 /* --------------------------------------------------------------------------------------- */
@@ -585,12 +585,15 @@ hr {
 /* ----------------------------------------- 代码块 --------------------------------------- */
 /* 代码块顶栏 */
 .md-fences {
+    /*
     padding-top: 30px;
     background-color: var(--code-top-background-color);
     border: var(--code-border);
     border-radius: var(--code-border-radius);
+    */
 }
 .md-fences::before {
+    /*
     position: absolute;
     left: 10px;
     top: 8px;
@@ -601,11 +604,12 @@ hr {
     background: rgb(252, 98, 93);
     box-shadow: 25px 0px rgb(253, 188, 64),
                 50px 0px rgb(53, 205, 75);
+    */
 }
 
 /* 代码块主体 */
 .cm-s-inner.CodeMirror {
-    margin: 0px;
+    margin: 5px;
     padding: 6px;
     font-family: var(--code-font-family);
     font-size: var(--code-font-size);
@@ -613,8 +617,10 @@ hr {
     color: var(--code-color);
     background-color: var(--code-body-background-color);
     border-top: 1px solid var(--code-body-border-top-color);
+    /*
     border-bottom-left-radius: var(--code-border-radius);
     border-bottom-right-radius: var(--code-border-radius);
+    */
 }
 
 /* 代码块行号 */
@@ -635,15 +641,17 @@ hr {
 
 /* 代码语言输入框 */
 .md-fences .code-tooltip{
-    padding: 0px;
+    padding: 0;
     background-color: var(--code-inputbox-color);
 }
+/*
 .code-tooltip .ty-input{
     border: var(--code-inputbox-border);
 }
 .code-tooltip .ty-input:focus{
     border: var(--code-inputbox-focus-border);
 }
+*/
 
 /* 选中的行 */
 .md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline {
@@ -693,7 +701,7 @@ hr {
     color: #f07178 !important;
 }
 .cm-s-inner .cm-comment {
-    color: #fff !important;
+    color: rgb(128, 128, 128) !important;
 }
 .cm-s-inner .cm-variable {
     color: #f07178 !important;
@@ -783,7 +791,7 @@ li {
 }
 
 #write ul>li > * {
-    margin: 0px 0px 0px var(--unorder-list-li-indentation);
+    margin: 0 0 0 var(--unorder-list-li-indentation);
 }
 
 #write ul>li:before {
