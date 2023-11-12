@@ -219,7 +219,7 @@
     /* 行内代码 */
     --inline-code-margin: 0px;
     --inline-code-padding: 2px 4px;
-    --inline-code-font-family: 'Consolas';
+    --inline-code-font-family: Monaco, Consolas;
     --inline-code-font-size: 1rem;
     --inline-code-font-weight: 400;
     --inline-code-color: orangered;
@@ -228,7 +228,7 @@
     --inline-code-border-radius: 5px;
 
     /* 代码块颜色 */
-    --code-font-family: 'Consolas';
+    --code-font-family: Monaco, Consolas;
     --code-font-size: 1rem;
     --code-font-weight: 400;
     --code-color: #a6accd;
@@ -293,7 +293,6 @@
     --img-padding: 0px;
     --img-border: 2px solid #000;
     --img-border-radius: 5px;
-    --img-name: '';                                 /* 若想自动编号,用"Fig." counter(imgNum);替代 */
     --img-font-family: 'Times New Roman';
     --img-font-size: 1.0rem;
 

@@ -555,6 +555,21 @@ hr {
     color: var(--inline-eq-color);
     font-size: var(--inline-eq-font-size);
 }
+
+h1 [md-inline='inline_math'] {
+    border: 0;
+    font-size: var(--h1-font-size);
+}
+
+h2 [md-inline='inline_math'] {
+    border: 0;
+    font-size: var(--h2-font-size);
+}
+
+h3 [md-inline='inline_math'] {
+    border: 0;
+    font-size: var(--h3-font-size);
+}
 /* --------------------------------------------------------------------------------------- */
 
 
@@ -869,6 +884,7 @@ li {
     text-align: center;
     border: var(--img-border);
     border-radius: var(--img-border-radius);
+    /*content: var(--img-name); eg:counter(imgNum) */
 }
 
 #write{
@@ -892,7 +908,7 @@ li {
 figure{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
 }
 table {
     margin: var(--table-margin);
